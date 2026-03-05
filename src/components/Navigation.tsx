@@ -13,6 +13,7 @@ export const Navigation = ({ onNavigate }: NavigationProps) => {
   const navItems = [
     { label: 'Home', id: 'home' },
     { label: 'Stats', id: 'stats' },
+    { label: 'P2P', id: 'p2p' },
     { label: 'Mining', id: 'mining' },
     { label: 'Swap', id: 'swap' },
     { label: 'Pool', id: 'pool' },

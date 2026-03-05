@@ -22,6 +22,7 @@ export default function App() {
       <Hero />
       <LiveStats />
       <Tokenomics />
+      <P2PSection />
       <Roadmap />
       <Mining />
       <Whitepaper />

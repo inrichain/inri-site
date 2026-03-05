@@ -1,3 +1,4 @@
+import { P2PSection } from './components/P2PSection';
 import { Hero } from "./components/Hero";
 import { LiveStats } from "./components/LiveStats";
 import { Mining, Roadmap, Tokenomics, Whitepaper } from "./components/Sections";

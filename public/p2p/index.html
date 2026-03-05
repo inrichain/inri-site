@@ -1,0 +1,35 @@
+export function P2PSection() {
+  // Isso funciona no GitHub Pages porque respeita o base "/inri-site/"
+  const src = `${import.meta.env.BASE_URL}p2p/`;
+
+  return (
+    <section id="p2p" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h2 className="text-3xl font-black text-white">P2P Escrow</h2>
+          <p className="mt-2 text-white/70">
+            P2P dentro do site (sem abrir outra aba).
+          </p>
+        </div>
+
+        <a
+          href={src}
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-white text-sm"
+        >
+          Abrir em tela cheia
+        </a>
+      </div>
+
+      <div className="mt-6 rounded-2xl overflow-hidden border border-white/10 bg-black/30">
+        <iframe
+          title="INRI P2P"
+          src={src}
+          className="w-full"
+          style={{ height: "900px", border: "0" }}
+        />
+      </div>
+    </section>
+  );
+}

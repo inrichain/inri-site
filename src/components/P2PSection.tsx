@@ -1,13 +1,13 @@
 export function P2PSection() {
-  // Respeita o base do GitHub Pages (/inri-site/)
+  // Isso respeita o base "/inri-site/" no GitHub Pages
   const src = `${import.meta.env.BASE_URL}p2p/`;
 
   return (
-    <section id="p2p" className="mx-auto max-w-6xl px-6 py-14">
+    <section id="p2p" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div className="flex items-end justify-between gap-4 flex-wrap">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white">P2P</h2>
-          <p className="mt-2 text-white/60">
+          <h2 className="text-3xl font-black text-white">P2P</h2>
+          <p className="mt-2 text-gray-300">
             P2P dentro do site (sem abrir outra aba).
           </p>
         </div>
@@ -16,13 +16,13 @@ export function P2PSection() {
           href={src}
           target="_blank"
           rel="noreferrer"
-          className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white hover:bg-white/10 transition"
+          className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-white text-sm"
         >
-          Abrir em tela cheia
+          Open Fullscreen
         </a>
       </div>
 
-      <div className="mt-6 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+      <div className="mt-6 rounded-2xl overflow-hidden border border-blue-500/20 bg-slate-950/40">
         <iframe
           title="INRI P2P"
           src={src}
